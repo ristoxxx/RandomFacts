@@ -28,14 +28,18 @@ const year = currentDate.getFullYear();
 
 const week = currentDate.getDay();
 
-const month = currentDate.getMonth();
+const monthName = [
+    'January', 'February', 'March', 'April', 'May', 'June','July', 'August', 'September', 'October', 'November', 'December'
+]
+
+const month = monthName[currentDate.getMonth()];
 
 const dateItems = [
     year, week, month
 ];
 function randomDateItem() {
     const item =[Math.floor(Math.random() * dateItems.length)];
-    document.getElementById('date').innerHTML = dateItems[0].text;
+    document.getElementById('date').innerHTML = dateItems[item];
 };
 
 function doAll() {
