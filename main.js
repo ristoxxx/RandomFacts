@@ -65,7 +65,7 @@ function easternEgg() {                                                     // A
         document.body.style.backgroundColor = 'black';                      // change the background color to black and text color to white
         document.body.style.color = 'white';
     } else {                                                                // if 'I am a web developer' fact is not selected,
-        document.body.style.backgroundColor = 'white';                      // change the background color back to white
+        document.body.style.backgroundColor = '';                           // change the background color back to original color
         document.body.style.color = 'black';                                // and change the text color back to black 
     }
 }
