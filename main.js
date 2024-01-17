@@ -24,15 +24,19 @@ function newFact() {
 
 const currentDate = new Date();
 
-const year = currentDate.getFullYear();
+const year = 'This year is ' + currentDate.getFullYear();
 
-const week = currentDate.getDay();
+const weekDay = [
+    'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'
+]
+
+const week = weekDay['Today is ' + currentDate.getDay()];
 
 const monthName = [
     'January', 'February', 'March', 'April', 'May', 'June','July', 'August', 'September', 'October', 'November', 'December'
 ]
 
-const month = monthName[currentDate.getMonth()];
+const month = monthName['This month is ' + currentDate.getMonth()];
 
 const dateItems = [
     year, week, month
